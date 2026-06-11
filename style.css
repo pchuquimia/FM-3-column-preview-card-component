@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@700&display=swap");
-
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 *::before,
 *::after,
 * {
