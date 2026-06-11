@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@700&display=swap");
+
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  font: inherit;
+}
+:root {
+  --Gold-500: hsl(31, 77%, 52%);
+  --Cyan-800: hsl(184, 100%, 22%);
+  --Green-950: hsl(179, 100%, 13%);
+
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.5);
+  --Gray-100-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+}
+.container {
+  display: grid;
+  grid-template-rows: 3fr;
+  padding: 2rem;
+  max-width: 25rem;
+}
+.card {
+  padding: 3rem;
+}
+.flex-grid {
+  display: grid;
+  gap: 1.8rem;
+}
+.title {
+  text-transform: uppercase;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 2.3rem;
+  color: var(--Gray-100-background-headings-buttons);
+}
+.card-1 {
+  background-color: var(--Gold-500);
+}
+.card-2 {
+  background-color: var(--Cyan-800);
+}
+.card-3 {
+  background-color: var(--Green-950);
+}
+.card p {
+  color: var(--Transparent-white-paragraphs);
+  line-height: 1.5;
+}
+.button {
+  color: var(--Gray-100-background-headings-buttons);
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  border: 2px solid var(--Gray-100-background-headings-buttons);
+  line-height: 1rem;
+  cursor: pointer;
+  width: 10rem;
+}
+.button-1 {
+  color: var(--Gold-500);
+}
+.button-2 {
+  color: var(--Cyan-800);
+}
+.button-3 {
+  color: var(--Green-950);
+}
+
+.button-1:hover {
+  background-color: var(--Gold-500);
+}
+.button-2:hover {
+  background-color: var(--Cyan-800);
+}
+.button-3:hover {
+  background-color: var(--Green-950);
+}
+.button:hover {
+  color: white;
+  border: 2px solid var(--Gray-100-background-headings-buttons);
+}
+@media (min-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 60rem;
+  }
+  .card p {
+    padding-bottom: 3rem;
+  }
+}
